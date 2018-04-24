@@ -73,7 +73,7 @@ f.close
 if diff != '':
 
     #rollback configuration
-    time.sleep(5)
+
     cli('configure replace flash:/Unauth_config_rollback/base-config force')
     print('Config rollback successful')
 
