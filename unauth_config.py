@@ -4,11 +4,8 @@
 
 
 from cli import cli
-import time
 import difflib
-import requests
-import json
-import service_now_apis
+
 import os
 os.chdir("/bootflash/Unauth_config_rollback")
 
