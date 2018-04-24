@@ -10,9 +10,6 @@ import os
 os.chdir("/bootflash/Unauth_config_rollback")
 
 
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)  # Disable insecure https warnings
-
-
 def save_config():
 
     # save running configuration
