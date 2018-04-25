@@ -47,11 +47,6 @@ def compare_configs(cfg1, cfg2):
 
 # main application
 
-syslog_input = cli('show logging | in %SYS-5-CONFIG_I')
-syslog_lines = syslog_input.split('\n')
-lines_no = len(syslog_lines)-2
-user_info = syslog_lines[lines_no]
-
 old_cfg_fn = '/bootflash/Unauth_config_rollback/base-config'
 new_cfg_fn = save_config()
 
